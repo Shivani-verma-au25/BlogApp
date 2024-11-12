@@ -12,9 +12,9 @@ app.use(exprees.json())
 app.use('/api/blogs' , blogRouter)
 
 
-app.use('/api',(req,res) => {
-    res.send("hello world")
-})
+// app.use('/api',(req,res) => {
+//     res.send("hello world")
+// })
 
 app.listen(process.env.PORT ,() => {
     console.log(`Your Server is Running At ${process.env.PORT}`);

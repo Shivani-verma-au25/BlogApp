@@ -25,7 +25,7 @@ const fetchListOfBlog = async(req,res) => {
 
 const addNewBlog = async(req,res) => {
     const {title,description} = req.body;
-    const currentDate = new date;
+    const currentDate = new Date;
 
     const newlyCreatedBlog  = new blog({title,description,date : currentDate})
 
@@ -87,7 +87,7 @@ const updateABlog = async(req,res) => {
         return res.status(500).json({message : "Unable to update"})
     }
 
-    return res.send(200).json({currentBlogUpdate})
+    return res.status(200).json({currentBlogUpdate})
 }
 
 

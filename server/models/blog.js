@@ -4,7 +4,7 @@ const schma = mongoose.Schema
 
 
 const blogSchema = new schma({
-    type :{
+    title :{
         type:String
     },
     description : {
